@@ -97,6 +97,13 @@ body {
     transform: translateY(0);
 }
 
+#top-orders-container {
+    border-top: 2px dashed var(--accent-color);
+    opacity: 1;
+    transform: translateY(0);
+    transition: none;
+}
+
 h2 {
     font-size: 2.2em;
     font-weight: 700;
@@ -151,6 +158,16 @@ h2 {
 
 .metric-item.single {
     flex: none;
+}
+
+.metric-item.clickable {
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.metric-item.clickable:hover {
+    transform: scale(1.05);
+    color: var(--title-color);
 }
 
 .metric-item span {
