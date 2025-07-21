@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | wartov</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+    <div class="cursor-light"></div>
+    <div class="container">
+        <header class="hero">
+            <h1 class="hero-title">wartov</h1>
+            <p class="hero-handle">@wartov1337</p>
+            <p class="hero-subtitle">Я <span class="typing-effect"></span></p>
+            <div class="social-links">
+                <a href="https://t.me/wartov1337" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+                <a href="https://discordapp.com/users/wartov1337" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+                <a href="https://github.com/wartov1337" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="quick-nav">
+                <a href="#services" class="nav-button">Направления</a>
+                <a href="works.html" class="nav-button">Работы</a>
+                <a href="catalog.html" class="nav-button">Каталог решений</a>
+                <a href="#pricing" class="nav-button">Цены</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="content-section" id="skills">
+                <h2>Ключевые навыки</h2>
+                <div class="skills-grid">
+                    <div class="skill-card"><i class="fab fa-js"></i> JS/TS</div>
+                    <div class="skill-card"><i class="fab fa-python"></i> Python</div>
+                    <div class="skill-card"><i class="fab fa-java"></i> Java</div>
+                    <div class="skill-card"><i class="fab fa-html5"></i> HTML/CSS</div>
+                </div>
+            </section>
+            
+            <section class="content-section" id="services">
+                <h2>Основные направления</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-robot"></i></div>
+                        <h3>Боты для TG/DS</h3>
+                        <p>Разработка ботов любой сложности для Telegram и Discord.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-code"></i></div>
+                        <h3>Веб-сайты</h3>
+                        <p>Создание современных сайтов, от лендингов до сложных веб-приложений.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-desktop"></i></div>
+                        <h3>Тулки и GUI</h3>
+                        <p>Разработка десктопных утилит с графическим интерфейсом.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section" id="pricing">
+                <h2>Цены на услуги</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card sale">
+                        <h3>MVP</h3>
+                        <p class="price" data-price-usd="5.5" data-old-price="6-7$">5.5$<span class="price-rub"></span></p>
+                        <p>Базовый продукт для старта проекта.</p>
+                    </div>
+                    <div class="pricing-card sale">
+                        <h3>MVP++</h3>
+                        <p class="price" data-price-usd="11" data-old-price="13-15$">11-12$<span class="price-rub"></span></p>
+                        <p>Расширенная версия с дополнительными возможностями.</p>
+                    </div>
+                    <div class="pricing-card sale">
+                        <h3>Веб-дизайн</h3>
+                        <p class="price" data-price-usd="9" data-old-price="от 11$">от 9$<span class="price-rub"></span></p>
+                        <p>Дизайн кодом, без использования Figma и аналогов.</p>
+                    </div>
+                    <div class="pricing-card full-prod sale">
+                        <h3>Production</h3>
+                        <p class="price" data-price-usd="22" data-old-price="от 27.5$">от 22$<span class="price-rub"></span></p>
+                        <p>Готовое решение под ключ, с инструкцией по запуску и поддержкой.</p>
+                    </div>
+                    <div class="pricing-card sale">
+                        <h3>Обновление скриптов</h3>
+                        <p class="price" data-price-usd="4.5" data-old-price="5.5$">4.5$<span class="price-rub"></span></p>
+                        <p>Поддержка и обновление готового кода.</p>
+                    </div>
+                    <div class="pricing-card sale">
+                        <h3>Тех. помощь</h3>
+                        <p class="price" data-price-usd="4" data-old-price="5$">4$<span class="price-rub"></span></p>
+                        <p>Помощь с настройкой, запуском или исправлением ошибок.</p>
+                    </div>
+                    <div class="pricing-card sale">
+                        <h3>Аудит и Консультация</h3>
+                        <p class="price" data-price-usd="8" data-old-price="от 10$">от 8$<span class="price-rub"></span></p>
+                        <p>Анализ кода, поиск проблем или подбор технологий.</p>
+                    </div>
+                </div>
+                <div class="special-offer-card">
+                    <h3>За отзыв</h3>
+                    <p class="price">Бесплатно</p>
+                    <p>Простые ТГ боты или статические сайты в обмен на честный отзыв.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
