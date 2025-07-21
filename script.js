@@ -129,4 +129,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 <a href="https://t.me/wartov1337" target="_blank" class="cta-button">Связаться и обсудить</a>
             </div>`;
     }
+
+    const showTopOrdersBtn = document.getElementById('show-top-orders');
+    const topOrdersContainer = document.getElementById('top-orders-container');
+
+    if (showTopOrdersBtn && topOrdersContainer) {
+        showTopOrdersBtn.addEventListener('click', () => {
+            const isHidden = topOrdersContainer.style.display === 'none';
+            if (isHidden) {
+                topOrdersContainer.style.display = 'block';
+                setTimeout(() => {
+                    topOrdersContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 50);
+            } else {
+                topOrdersContainer.style.display = 'none';
+            }
+        });
+    }
 });
