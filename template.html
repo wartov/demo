@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Описание решения | wartov</title>
+    <link rel="stylesheet" href="catalog.css">
+    <style>
+        .solution-detail-header { text-align: center; margin-bottom: 40px; }
+        .solution-detail-header h1 { font-size: 3em; margin: 0 0 10px 0; color: var(--title-color); }
+        .solution-detail-header p { font-size: 1.2em; color: var(--text-color); opacity: 0.8; }
+        .solution-content { background: var(--card-bg-color); border-radius: 15px; padding: 30px; border: 1px solid var(--border-color); backdrop-filter: blur(15px); }
+        .solution-content h3 { color: var(--title-color); border-bottom: 1px solid var(--border-color); padding-bottom: 10px; margin: 0 0 20px 0; }
+        .solution-content ul { padding-left: 20px; margin: 0 0 20px 0; line-height: 1.7; }
+        .cta-button { display: inline-block; background-color: var(--accent-color); color: #101010; padding: 15px 35px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 1.1em; transition: transform 0.3s; }
+        .cta-button:hover { transform: translateY(-5px); }
+        .button-container { text-align: center; margin-top: 30px; }
+        @media (max-width: 640px) {
+            .solution-detail-header h1 { font-size: 2.2em; }
+            .solution-content { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor-light"></div>
+    <div class="container">
+        <header id="solution-header" class="solution-detail-header">
+        </header>
+        <main id="solution-main" class="solution-content">
+        </main>
+        <footer class="catalog-footer">
+            <a href="catalog.html" class="nav-button">Назад в каталог</a>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
