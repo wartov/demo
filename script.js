@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const priceElements = document.querySelectorAll('.price[data-price-usd]');
     if (priceElements.length > 0) {
-        const USD_TO_RUB_RATE = 92;
+        const USD_TO_RUB_RATE = 78;
         priceElements.forEach(el => {
             const priceUSD = parseFloat(el.getAttribute('data-price-usd'));
             if (!isNaN(priceUSD)) {
