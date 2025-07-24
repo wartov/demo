@@ -4,26 +4,22 @@ document.addEventListener('DOMContentLoaded', () => {
         const themeSwitcher = document.getElementById('theme-switcher');
         if (!themeSwitcher) return;
 
-        const moonIcon = themeSwitcher.querySelector('.fa-moon');
-        const starIcon = themeSwitcher.querySelector('.fa-star');
+        const themes = ['dark', 'light', 'summer', 'mango', 'forest'];
         const osTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         let currentTheme = localStorage.getItem('theme') || osTheme;
+        if (!themes.includes(currentTheme)) currentTheme = 'dark';
 
         const applyTheme = (theme) => {
             document.documentElement.setAttribute('data-theme', theme);
-            if (theme === 'light') {
-                moonIcon.style.display = 'none';
-                starIcon.style.display = 'inline-block';
-            } else {
-                moonIcon.style.display = 'inline-block';
-                starIcon.style.display = 'none';
-            }
         };
 
         applyTheme(currentTheme);
 
         themeSwitcher.addEventListener('click', () => {
-            const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const currentIndex = themes.indexOf(currentTheme);
+            const nextIndex = (currentIndex + 1) % themes.length;
+            const newTheme = themes[nextIndex];
             localStorage.setItem('theme', newTheme);
             applyTheme(newTheme);
         });
@@ -101,12 +97,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (scrollers.length > 0) {
         scrollers.forEach((scroller) => {
             const scrollerInner = scroller.querySelector(".scroller-inner");
-            const scrollerContent = Array.from(scrollerInner.children);
-            scrollerContent.forEach((item) => {
-                const duplicatedItem = item.cloneNode(true);
-                duplicatedItem.setAttribute("aria-hidden", true);
-                scrollerInner.appendChild(duplicatedItem);
-            });
+            if (scrollerInner.children.length > 0) {
+                const scrollerContent = Array.from(scrollerInner.children);
+                scrollerContent.forEach((item) => {
+                    const duplicatedItem = item.cloneNode(true);
+                    duplicatedItem.setAttribute("aria-hidden", true);
+                    scrollerInner.appendChild(duplicatedItem);
+                });
+            }
         });
     }
 
