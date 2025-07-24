@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +12,17 @@
 </head>
 <body>
     <div class="cursor-light"></div>
+    <div class="theme-switcher" id="theme-switcher">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-star" style="display: none;"></i>
+    </div>
     <div class="container">
         <header class="catalog-header">
             <h1>Каталог Решений</h1>
-            <p>Найдите готовое решение для вашей задачи или вдохновитесь идеями.</p>
+            <p>Здесь собраны готовые шаблоны и примеры для ваших задач. Кликните на карточку, чтобы узнать подробности.</p>
             <div class="search-container">
                 <i class="fas fa-search"></i>
-                <input type="text" id="searchInput" placeholder="Я хочу... например, 'казино' или 'рассылку'">
+                <input type="text" id="searchInput" placeholder="Я ищу... например, 'казино' или 'рассылку'">
             </div>
         </header>
 
@@ -36,12 +40,12 @@
             <a href="template.html?solution=ref_bot" class="solution-card" data-tags="реф реферальный бот приглашения телеграм тг">
                 <div class="card-icon"><i class="fas fa-users"></i></div>
                 <h3>Реферальный бот</h3>
-                <p>Система приглашений с бонусами и статистикой.</p>
+                <p>Система приглашений с бонусами и подробной статистикой.</p>
             </a>
             <a href="template.html?solution=ds_game_bot" class="solution-card" data-tags="дискорд дс ds игровой бот экономика">
                 <div class="card-icon"><i class="fab fa-discord"></i></div>
                 <h3>Игровой бот для Discord</h3>
-                <p>Бот с кастомной валютой, магазином и ивентами.</p>
+                <p>Бот с кастомной валютой, магазином и игровыми ивентами.</p>
             </a>
              <a href="template.html?solution=ds_support_bot" class="solution-card" data-tags="дискорд дс ds ии саппорт поддержка gemini">
                 <div class="card-icon"><i class="fas fa-headset"></i></div>
