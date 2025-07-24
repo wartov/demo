@@ -189,6 +189,8 @@ h2 { font-size: 2.2em; font-weight: 700; color: var(--title-color); text-align: 
 .old-price-display { display: block; font-size: 0.6em; font-weight: 400; color: var(--text-color); opacity: 0.5; text-decoration: line-through; margin-bottom: 5px; }
 .price-rub { display: block; font-size: 0.5em; font-weight: 400; color: var(--text-color); opacity: 0.7; margin-top: 5px; }
 
+.catalog-footer { text-align: center; margin-top: 50px; }
+
 @media (max-width: 768px) {
     body { padding: 20px 15px; }
     .hero-title { font-size: 3em; }
